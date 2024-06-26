@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Survey</title>
+</head>
+<body>
+    <h1 id="title">Data Survey</h1>
+    <p id="description">A website to collect simple data from users :)</p>
+    <form id="survey-form">
+    <label for="name" id="name-label">Name</label><br>
+    <input type="text" id="name" name="name" required placeholder="Type name here"><br>
+    <label for="email" id="email-label">Email</label><br>
+    <input type="email" id="email" required name="email" placeholder="Type email here"><br>
+    <label for="age" id="number-label">Age</label><br>
+    <input type="number" id="number" name="age" min="1" max="99" required placeholder="Type age here"><br>
+    <label for="gender">Gender</label><br>
+    <select id="dropdown" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+    <br>
+    <input type="radio" id="honkai" name="game" value="Honkai">
+    <label for="honkai">Honkai</label><br>
+    <input type="radio" id="genshin" name="game" value="Genshin">
+    <label for="genshin">Genshin</label><br>
+    <input type="checkbox" value="miHoYo" id="mihoyo">
+    <label for="mihoyo">miHoYo</label>
+    <input type="checkbox" value="Hoyoverse" id="hoyoverse">
+    <label for="hoyoverse">Hoyoverse</label><br>
+    <textarea placeholder="Additional comments..."></textarea><br>
+    <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
